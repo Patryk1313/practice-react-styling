@@ -8,9 +8,18 @@ import Task03 from "./../../03/Task03";
 import Task04 from "./../../04/Task04";
 import Task05 from "./../../05/Task05";
 
+const theme = {
+    primary: "#007bff",
+    primaryDark: "#0056b3",
+    primaryHover: "#0069d9",
+    secondary: "#6c757d",
+    secondaryDark: "#545b62",
+    secondaryHover: "#5a6268",
+};
+
 const App = () => {
     return (
-        <>
+        <ThemeProvider theme={theme}>
             <Container fluid>
                 <Row>
                     <Col>
@@ -26,7 +35,7 @@ const App = () => {
                 <Task04 />
                 <Task05 />
             </Container>
-        </>
+        </ThemeProvider>
     );
 };
 
