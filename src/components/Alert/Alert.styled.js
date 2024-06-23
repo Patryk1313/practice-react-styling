@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
 const StyledAlert = styled.div`
-    padding: 12px 10px;
+    padding: 0.75rem 1.25rem;
 
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 
     border: 1px solid transparent;
 
-    border-radius: 4px;
+    border-radius: 0.25rem;
 
-    color: #6e88af;
+    color: #004085;
 
     background-color: ${(props) => props.theme[props.variant] || "#031633"};
 
-    border-color: ${(props) => props.theme[props.variant] || "#b8daff"};
+    border-color: ${(props) => props.theme[props.variant] || "#6ea8fe"};
 `;
 
 export { StyledAlert };
